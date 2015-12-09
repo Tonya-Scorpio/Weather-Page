@@ -1,0 +1,165 @@
+body {
+    font-size: 100%;
+    font-family: Arial;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    paddin: 0;
+}
+
+html {
+    display: flex;
+}
+
+body {
+    height: 560px;
+    background: gray;
+}
+
+.container {
+    width: 690px;
+    height: 545px;
+    color: white;
+    background: url('../images/P1060813.JPG') no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.months {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    width: 690px;
+    background-color: #9966CC;
+    height: 35px;
+}
+
+h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-size: 45px;
+    width: 200px;
+    height: 170px;
+    font-weight: bold;
+    line-height: 0.8;
+    font-size-adjust: 0.8;
+    text-shadow: black 0px 0px 16px;
+}
+
+h2 span {
+    color: #AB274F;
+    margin-left: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+h4 {
+    background: white;
+    width: 690px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+h4 span {
+    color: black;
+    font-weight: normal;
+}
+
+.table-container {
+    border-radius: 15px;
+    width: 190px;
+    height: 240px;
+    padding: 1px 10px 0 10px;
+}
+
+.table-container.white {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.table-container.yellow {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+.table-container.green {
+    background-color: rgba(168, 228, 160, 0.3);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-container table tr,
+.table-container table td {
+    padding: 0;
+    margin: 0;
+}
+
+.table-container td.temperature-part {
+    color: black;
+}
+
+.table-container td.temperature-part,
+.table-container td:first-child {
+    width: 1px;
+}
+
+.table-container table td:last-child {
+    text-align: center;
+    width: 1px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.day {
+    height: 1em;
+    width: 45px;
+    text-align: center;
+    font-size-adjust: 0.2;
+}
+
+.table-container.white .line .day {
+    background-color: red;
+}
+
+.table-container.yellow .line .day {
+    background-color: rgba(236, 124, 38, 0.4);
+}
+
+.table-container.yellow .line:first-child {}
+
+.table-container.green .line .day {
+    background-color: #44944A;
+}
+
+.temperature {
+    color: black;
+    width: auto;
+    display: flex;
+    margin: auto;
+}
+
+i {
+    margin-right: 5px;
+}
