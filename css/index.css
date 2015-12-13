@@ -63,7 +63,7 @@ i,
 }
 
 h2 span {
-    color: #AB274F;
+    color:#7200a3;
     margin-left: 20px;
 }
 
@@ -166,5 +166,6 @@ h4 span {
 }
 
 i {
-    margin-right: 5px;
+     
+    width: 30px;
 }
