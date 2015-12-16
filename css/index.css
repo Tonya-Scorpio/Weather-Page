@@ -63,7 +63,7 @@ i,
 }
 
 h2 span {
-    color:#7200a3;
+    color: #7200a3;
     margin-left: 20px;
 }
 
@@ -137,7 +137,6 @@ h4 span {
     display: flex;
     justify-content: space-between;
     margin-top: 13px;
-    
 }
 
 .day {
@@ -148,8 +147,8 @@ h4 span {
 }
 
 .table-container.white .line .day {
-    background-color:#988ba5
-;}
+    background-color: #988ba5;
+}
 
 .table-container.yellow .line .day {
     background-color: #987f46;
@@ -169,6 +168,43 @@ h4 span {
 }
 
 i {
-     
     width: 30px;
+}
+
+@keyframes moving {
+    0%, 20% {
+        background-image: url('../images/P1060813.JPG');
+    }
+    40%, 60% {
+        background-image: url('../images/P1060814.JPG');
+    }
+    80%, 100% {
+        background-image: url('../images/P1060821.JPG');
+    }
+}
+
+@-webkit-keyframes moving {
+    0% {
+        background-image: url('../images/P1060813.JPG');
+    }
+    33% {
+        background-image: url('../images/P1060814.JPG');
+    }
+    66% {
+        background-image: url('../images/P1060821.JPG');
+    }
+}
+
+.container {
+    -webkit-animation-name: moving;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+
+    animation-name: moving;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
